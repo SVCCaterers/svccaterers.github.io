@@ -113,6 +113,36 @@ button:hover {
   color: #ffffff;
 }
 
+/* Contact Form */
+.contact form {
+  max-width: 400px;        /* keeps form narrow */
+  margin: 0 auto;          /* centers horizontally */
+  text-align: left;        /* keeps labels/inputs aligned nicely */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.contactform label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contactform input, 
+.contact form textarea {
+  width: 100%;             /* full width inside form */
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.contact form button {
+  display: block;
+  margin: 0 auto;          /* centers the button */
+}
 
 
 
