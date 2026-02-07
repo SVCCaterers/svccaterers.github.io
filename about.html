@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - SVR Caterers</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; background:#000; color:#fff; text-align:center; }
+    header, footer { padding:30px; }
+    header img { max-width:180px; transition:opacity 0.5s ease-in-out; }
+    h1, h2, h3 { color:#D4AF37; }
+    nav a { margin:0 15px; text-decoration:none; color:#D4AF37; font-weight:bold; }
+    section { max-width:800px; margin:40px auto; line-height:1.6; text-align:left; }
+    ul { list-style:none; padding:0; }
+    ul li { margin:8px 0; }
+    footer { background:#111; margin-top:40px; }
+    footer a { color:#D4AF37; margin:0 10px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img id="logo" src="logo1.jpeg" alt="SVR Caterers Logo">
+    <h1>SVR Caterers</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      At <strong>SVR Caterers</strong>, we believe that food is more than just a meal — it is an experience that brings people together. With a passion for flavor and a commitment to excellence, we provide delicious catering services for every occasion, whether it's a traditional pooja, a grand wedding, or a lively family celebration.
+    </p>
+
+    <h3>Vegetarian Catering</h3>
+    <p>
+      For our vegetarian clients, we take pride in offering authentic dishes prepared by <strong>special Brahmin cooks</strong>. Every recipe is crafted with purity, devotion, and respect for tradition, ensuring that your sacred events are served with the highest standards of taste and sanctity.
+    </p>
+
+    <h3>Non‑Vegetarian Catering</h3>
+    <p>
+      Our non‑vegetarian menu is a celebration of rich regional flavors, prepared by <strong>expert Andhra and Telangana chefs</strong>. From spicy curries to traditional delicacies, we bring the authentic taste of South India to your gatherings, making every occasion memorable.
+    </p>
+
+    <h3>Why Choose Us?</h3>
+    <ul>
+      <li>🍽️ Customized menus for every occasion</li>
+      <li>👨‍🍳 Experienced cooks specializing in both vegetarian and non‑vegetarian cuisines</li>
+      <li>✨ Purity and authenticity in preparation and service</li>
+      <li>🎉 Professional catering for poojas, marriages, corporate events, and private parties</li>
+    </ul>
+
+    <p>
+      Whatever the occasion, SVR Caterers is here to serve you with warmth, tradition, and unforgettable taste.
+    </p>
+  </section>
+
+  <footer>
+    <p>📧 info@svrcaterers.com | 📞 +91-9876543210</p>
+    <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+  </footer>
+
+  <script>
+    const logo=document.getElementById("logo");
+    const logos=["logo1.jpeg","logo2.jpeg"];
+    let index=0;
+    setInterval(()=>{logo.style.opacity=0;
+      setTimeout(()=>{index=(index+1)%logos.length;
+        logo.src=logos[index];
+        logo.style.opacity=1;
+      },500);
+    },3000);
+  </script>
+</body>
+</html>
