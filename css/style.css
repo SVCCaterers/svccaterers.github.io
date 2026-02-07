@@ -1,7 +1,7 @@
 /* Footer */
 footer {
   background-color: #000000;
-  color: #d4af37; /* gold text for visibility */
+  color: #ffffff; /* white text for visibility */
   text-align: center;
   padding: 20px;
   border-top: 3px solid #d4af37;
@@ -9,11 +9,11 @@ footer {
 }
 
 footer a {
-  color: #ffffff; /* white links stand out against gold text */
+  color: #d4af37; /* gold links stand out against white text */
   text-decoration: none;
   font-weight: bold;
 }
 
 footer a:hover {
-  color: #d4af37; /* gold on hover for consistency */
+  color: #ffffff; /* invert on hover */
 }
