@@ -90,7 +90,7 @@ footer {
 footer a {
   color: #d4af37; /* gold links */
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 footer a:hover {
@@ -112,6 +112,7 @@ button:hover {
   background-color: #000000; /* invert on hover */
   color: #ffffff;
 }
+
 
 
 
