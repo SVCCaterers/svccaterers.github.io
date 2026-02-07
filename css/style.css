@@ -69,7 +69,7 @@ p, li {
   color: #111111;
   line-height: 1.6;
 }
-#Contact
+.Contact
 {
 color: #ffffff;
   line-height: 1.6;
@@ -112,6 +112,7 @@ button:hover {
   background-color: #000000; /* invert on hover */
   color: #ffffff;
 }
+
 
 
 
