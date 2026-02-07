@@ -19,7 +19,7 @@ header {
   background-color: #000000;
   color: #ffffff;
   padding: 20px;
-  text-align: center; /* center logo and nav */
+  text-align: center;
 }
 
 header .logo img {
@@ -27,31 +27,21 @@ header .logo img {
   border: 3px solid #d4af37; /* gold border */
   border-radius: 50%; /* circular logo */
   padding: 5px;
-  background-color: #000000; /* start black */
-  animation: juggleLogo 4s infinite;
-}
-
-/* Juggle animation: alternates background between black and white */
-@keyframes juggleLogo {
-  0%   { background-color: #000000; transform: translateY(0); }
-  25%  { background-color: #ffffff; transform: translateY(-10px); }
-  50%  { background-color: #000000; transform: translateY(0); }
-  75%  { background-color: #ffffff; transform: translateY(10px); }
-  100% { background-color: #000000; transform: translateY(0); }
+  background-color: transparent; /* no rotation, just swap images */
 }
 
 /* Navigation */
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* center nav links */
+  justify-content: center;
   gap: 25px;
   margin-top: 15px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #d4af37; /* gold links */
+  color: #d4af37;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -62,13 +52,13 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-  flex: 1; /* pushes footer to bottom */
+  flex: 1;
   padding: 30px;
 }
 
 h1, h2 {
   color: #000000;
-  border-bottom: 2px solid #d4af37; /* gold underline */
+  border-bottom: 2px solid #d4af37;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
@@ -82,10 +72,10 @@ p, li {
 footer {
   background-color: #000000;
   color: #ffffff;
-  text-align: center; /* center footer text */
+  text-align: center;
   padding: 20px;
   border-top: 3px solid #d4af37;
-  margin-top: auto; /* sticks footer to bottom */
+  margin-top: auto;
 }
 
 footer a {
