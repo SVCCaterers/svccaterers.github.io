@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const logo = document.getElementById("rotating-logo");
   if (!logo) return;
 
-  const logos = ["images/logo1.png", "images/logo2.png"];
+  const logos = ["images/logo1.jpeg", "images/logo2.jpeg"];
   let index = 0;
 
   setInterval(() => {
@@ -11,3 +11,4 @@ document.addEventListener("DOMContentLoaded", function() {
     logo.src = logos[index];
   }, 5000); // switch logo image every 5 seconds
 });
+
