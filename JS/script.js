@@ -1,47 +1,43 @@
-// JS/script.js
-document.addEventListener("DOMContentLoaded", function() {
-  function startLogoRotation() {
-    const logo = document.getElementById("rotating-logo");
-    if (!logo) {
-      // Retry after a short delay if header not yet injected
-      setTimeout(startLogoRotation, 500);
-      return;
-    }
+// =====================
+// Rotating Logo Section
+// =====================
+const logoImages = ["images/logo1.jpeg", "images/logo2.jpeg"];
+let logoIndex = 0;
 
-    const logos = ["images/logo1.jpeg", "images/logo2.jpeg"];
-    let index = 0;
-
-    setInterval(() => {
-      index = (index + 1) % logos.length;
-      logo.src = logos[index];
-      console.log("Logo changed to:", logo.src); // debug log
-    }, 5000);
+function rotateLogo() {
+  const logoElement = document.getElementById("rotating-logo");
+  if (logoElement) {
+    logoIndex = (logoIndex + 1) % logoImages.length;
+    logoElement.src = logoImages[logoIndex];
   }
+}
+setInterval(rotateLogo, 5000); // rotate logo every 5 seconds
 
-  startLogoRotation();
-});
-// Array of image paths
-const galleryImages = [
-  "images/pic1.jpg",
-  "images/pic2.jpg",
-  "images/pic3.jpg",
-  "images/pic4.jpg"
-];
+// =====================
+// Image Gallery Section
+// =====================
+// Build array dynamically for 13 images (pic1.jpg ... pic13.jpg)
+const galleryImages = [];
+for (let i = 1; i <= 13; i++) {
+  galleryImages.push(`images/pic${i}.jpg`);
+}
 
 let currentIndex = 0;
 const galleryElement = document.getElementById("gallery-image");
 
-// Function to show image at current index
+// Show image at current index
 function showImage(index) {
-  galleryElement.src = galleryImages[index];
+  if (galleryElement) {
+    galleryElement.src = galleryImages[index];
+  }
 }
 
 // Auto rotation
-function autoRotate() {
+function autoRotateGallery() {
   currentIndex = (currentIndex + 1) % galleryImages.length;
   showImage(currentIndex);
 }
-setInterval(autoRotate, 5000); // every 5 seconds
+setInterval(autoRotateGallery, 5000); // rotate gallery every 5 seconds
 
 // Manual controls
 function nextImage() {
@@ -53,4 +49,3 @@ function prevImage() {
   currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
   showImage(currentIndex);
 }
-
