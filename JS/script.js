@@ -20,3 +20,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
   startLogoRotation();
 });
+// Array of image paths
+const galleryImages = [
+  "images/pic1.jpg",
+  "images/pic2.jpg",
+  "images/pic3.jpg",
+  "images/pic4.jpg"
+];
+
+let currentIndex = 0;
+const galleryElement = document.getElementById("gallery-image");
+
+// Function to show image at current index
+function showImage(index) {
+  galleryElement.src = galleryImages[index];
+}
+
+// Auto rotation
+function autoRotate() {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  showImage(currentIndex);
+}
+setInterval(autoRotate, 5000); // every 5 seconds
+
+// Manual controls
+function nextImage() {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  showImage(currentIndex);
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  showImage(currentIndex);
+}
+
