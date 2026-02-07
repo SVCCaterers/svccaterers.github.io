@@ -11,4 +11,3 @@ document.addEventListener("DOMContentLoaded", function() {
     logo.src = logos[index];
   }, 5000); // switch logo image every 5 seconds
 });
-
