@@ -66,14 +66,14 @@ h1, h2 {
 }
 
 p, li {
-  color: #ccffff;
+  color: #ffffff;
   line-height: 1.6;
 }
 
 /* Footer */
 footer {
   background-color: #000000;
-  color: #ccffff; /* white text for visibility */
+  color: #ffffff; /* white text for visibility */
   text-align: center; /* center text and links */
   padding: 20px;
   border-top: 3px solid #d4af37;
@@ -87,7 +87,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #ccffff; /* invert on hover */
+  color: #ffffff; /* invert on hover */
 }
 
 /* Buttons */
@@ -105,6 +105,7 @@ button:hover {
   background-color: #000000; /* invert on hover */
   color: #ffffff;
 }
+
 
 
 
