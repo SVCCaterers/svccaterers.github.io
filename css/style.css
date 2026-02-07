@@ -23,12 +23,12 @@ header {
 }
 
 header .logo img {
-  max-width: 120px;   /* limits logo size */
-  height: auto;       /* keeps aspect ratio */
+  height: 120px;       /* fixed height */
+  width: auto;         /* keep aspect ratio */
   border: 3px solid #d4af37; /* gold border */
-  border-radius: 50%; /* circular logo */
+  border-radius: 50%;  /* circular logo */
   padding: 5px;
-  background-color: transparent; /* no rotation, just swap images */
+  background-color: transparent;
   display: inline-block;
 }
 
@@ -74,14 +74,14 @@ p, li {
 footer {
   background-color: #000000;
   color: #ffffff; /* white text for visibility */
-  text-align: center;
+  text-align: center; /* center text and links */
   padding: 20px;
   border-top: 3px solid #d4af37;
   margin-top: auto; /* sticks footer to bottom */
 }
 
 footer a {
-  color: #d4af37; /* gold links stand out against white text */
+  color: #d4af37; /* gold links */
   text-decoration: none;
   font-weight: bold;
 }
