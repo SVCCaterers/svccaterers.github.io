@@ -7,39 +7,46 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #ffffff; /* clean white background */
-  color: #111111; /* dark text for readability */
+  background-color: #ffffff;
+  color: #111111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
 header {
-  background-color: #000000; /* black header */
+  background-color: #000000;
   color: #ffffff;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 20px;
+  text-align: center; /* center logo and nav */
 }
 
 header .logo img {
-  width: 120px;
-  border: 3px solid #d4af37; /* gold border around logo */
-  border-radius: 8px;
+  width: 140px;
+  border: 3px solid #d4af37; /* gold border */
+  border-radius: 50%; /* circular logo */
   padding: 5px;
-  background-color: #ffffff;
-  animation: rotateLogo 10s linear infinite;
+  background-color: #000000; /* start black */
+  animation: juggleLogo 4s infinite;
 }
 
-@keyframes rotateLogo {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Juggle animation: alternates background between black and white */
+@keyframes juggleLogo {
+  0%   { background-color: #000000; transform: translateY(0); }
+  25%  { background-color: #ffffff; transform: translateY(-10px); }
+  50%  { background-color: #000000; transform: translateY(0); }
+  75%  { background-color: #ffffff; transform: translateY(10px); }
+  100% { background-color: #000000; transform: translateY(0); }
 }
 
 /* Navigation */
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center; /* center nav links */
   gap: 25px;
+  margin-top: 15px;
 }
 
 nav ul li a {
@@ -50,11 +57,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffffff; /* white on hover */
+  color: #ffffff;
 }
 
 /* Main Content */
 main {
+  flex: 1; /* pushes footer to bottom */
   padding: 30px;
 }
 
@@ -74,9 +82,10 @@ p, li {
 footer {
   background-color: #000000;
   color: #ffffff;
-  text-align: center;
+  text-align: center; /* center footer text */
   padding: 20px;
-  border-top: 3px solid #d4af37; /* gold accent line */
+  border-top: 3px solid #d4af37;
+  margin-top: auto; /* sticks footer to bottom */
 }
 
 footer a {
@@ -88,9 +97,9 @@ footer a:hover {
   color: #ffffff;
 }
 
-/* Buttons (for forms) */
+/* Buttons */
 button {
-  background-color: #d4af37; /* gold button */
+  background-color: #d4af37;
   color: #000000;
   border: none;
   padding: 10px 20px;
@@ -100,6 +109,6 @@ button {
 }
 
 button:hover {
-  background-color: #000000; /* invert on hover */
+  background-color: #000000;
   color: #ffffff;
 }
