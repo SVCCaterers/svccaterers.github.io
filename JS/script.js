@@ -19,7 +19,7 @@ setInterval(rotateLogo, 5000); // rotate logo every 5 seconds
 // Build array dynamically for 13 images (pic1.jpg ... pic13.jpg)
 const galleryImages = [];
 for (let i = 1; i <= 13; i++) {
-  galleryImages.push(`images/pic${i}.jpg`);
+  galleryImages.push(`images/pic${i}.jpeg`);
 }
 
 let currentIndex = 0;
@@ -49,3 +49,4 @@ function prevImage() {
   currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
   showImage(currentIndex);
 }
+
