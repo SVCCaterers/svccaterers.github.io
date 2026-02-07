@@ -1,3 +1,75 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center; /* centers logo and nav */
+}
+
+header .logo img {
+  max-width: 120px;   /* limits logo size */
+  height: auto;       /* keeps aspect ratio */
+  border: 3px solid #d4af37; /* gold border */
+  border-radius: 50%; /* circular logo */
+  padding: 5px;
+  background-color: transparent; /* no rotation, just swap images */
+  display: inline-block;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* center nav links */
+  gap: 25px;
+  margin-top: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d4af37; /* gold links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* white on hover */
+}
+
+/* Main Content */
+main {
+  flex: 1; /* pushes footer to bottom */
+  padding: 30px;
+}
+
+h1, h2 {
+  color: #000000;
+  border-bottom: 2px solid #d4af37; /* gold underline */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+p, li {
+  color: #333333;
+  line-height: 1.6;
+}
+
 /* Footer */
 footer {
   background-color: #000000;
@@ -5,7 +77,7 @@ footer {
   text-align: center;
   padding: 20px;
   border-top: 3px solid #d4af37;
-  margin-top: auto;
+  margin-top: auto; /* sticks footer to bottom */
 }
 
 footer a {
@@ -16,4 +88,20 @@ footer a {
 
 footer a:hover {
   color: #ffffff; /* invert on hover */
+}
+
+/* Buttons */
+button {
+  background-color: #d4af37; /* gold button */
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000; /* invert on hover */
+  color: #ffffff;
 }
