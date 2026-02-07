@@ -1,77 +1,7 @@
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #ffffff;
-  color: #111111;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header */
-header {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
-
-header .logo img {
-  width: 140px;
-  border: 3px solid #d4af37; /* gold border */
-  border-radius: 50%; /* circular logo */
-  padding: 5px;
-  background-color: transparent; /* no rotation, just swap images */
-}
-
-/* Navigation */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #d4af37;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ffffff;
-}
-
-/* Main Content */
-main {
-  flex: 1;
-  padding: 30px;
-}
-
-h1, h2 {
-  color: #000000;
-  border-bottom: 2px solid #d4af37;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-p, li {
-  color: #333333;
-  line-height: 1.6;
-}
-
 /* Footer */
 footer {
   background-color: #000000;
-  color: #ffffff;
+  color: #d4af37; /* gold text for visibility */
   text-align: center;
   padding: 20px;
   border-top: 3px solid #d4af37;
@@ -79,26 +9,11 @@ footer {
 }
 
 footer a {
-  color: #d4af37;
+  color: #ffffff; /* white links stand out against gold text */
   text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
-  color: #ffffff;
-}
-
-/* Buttons */
-button {
-  background-color: #d4af37;
-  color: #000000;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #000000;
-  color: #ffffff;
+  color: #d4af37; /* gold on hover for consistency */
 }
